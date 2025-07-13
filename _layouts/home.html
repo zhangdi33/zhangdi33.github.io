@@ -3,15 +3,16 @@ layout: default
 ---
 
 <div>
-
-  {%- if page.title -%}
-  <header>
-    <h4>{{ page.title }}</h4>
-  </header>
-  {%- endif -%}
-
-  <section>
-    {{ content }}
-  </section>
+  <div class="card p-3">
+    {%- if page.title -%}
+    <header>
+      <h4>{{ page.title }}</h4>
+    </header>
+    {%- endif -%}
+    
+    <section>
+      {{ content }}
+    </section>
+  </div>
   
 </div>
