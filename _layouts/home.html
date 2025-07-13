@@ -4,6 +4,9 @@ layout: default
 
 <div>
   <div class="container page-content">
+    {%- if page.title -%}
+    <h4>{{ page.title }}</h4>
+    {%- endif -%}
     <section>
       {{ content }}
     </section>
