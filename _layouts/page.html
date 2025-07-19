@@ -1,13 +1,26 @@
 ---
 layout: default
 ---
-<div>
-  <div class="container page-content">
-    {%- if page.title -%}
-    <h4>{{ page.title }}</h4>
-    {%- endif -%}
-    <section>
-      {{ content }}
-    </section>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+  <head>
+    <!--- fontawesome icon --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+  
+  <div>
+    <div class="container page-content">
+      {%- if page.title -%}
+      <h4>{{ page.title }}</h4>
+      {%- endif -%}
+      <section>
+        {{ content }}
+      </section>
+    </div>
   </div>
-</div>
+    
+  </body>
+</html>
