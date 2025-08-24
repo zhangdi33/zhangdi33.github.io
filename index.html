@@ -116,7 +116,7 @@ layout: default
         <div class="accordion" id="projects">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingAEV">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AEV" aria-expanded="false" aria-controls="AEV">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#AEV" aria-expanded="false" aria-controls="AEV">
                 Describing the Atomic Environment
               </button>
             </h2>
@@ -155,8 +155,9 @@ layout: default
               <div class="accordion-body">
                 <p>
                   Principal Investigator: <a href="https://bits.csb.pitt.edu/" class="text-primary">David R. Koes</a>
-                  <br><i>University of Pittsburgh, Department of Computational and Systems Biology</i>
+                  <br><i class="small">University of Pittsburgh, Department of Computational and Systems Biology</i>
                 </p>
+                <p class="text-info">Sept 2019-Apr 2022</p>
                 <p><b>Grid-based inhomogenous solvation theory</b> (GIST) can quantify thermodynamic information and molecule distribution at considerable accuracy. This information has the potential to be exploited in structure-based drug discovery to determine chemical features on a pharmacophore, which is my objective for this project: to evaluate feature prediction accuracy of a machine learning model using GIST data.</p>
                 <ul>
                   <li>Compiled a dataset using grid-based inhomogeneous solvation theory (GIST) based energy calculation on PDBBind protein simulation data</li>
@@ -169,12 +170,18 @@ layout: default
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingWNT">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#WNT" aria-expanded="false" aria-controls="WNT">
-                Accordion Item #3
+                Drug Discovery of β-catenin Inhibitors in Cancer Signaling Pathway
               </button>
             </h2>
             <div id="WNT" class="accordion-collapse collapse" aria-labelledby="headingWNT" data-bs-parent="#projects">
               <div class="accordion-body">
-                
+                <p>This is my first drug discovery research project, which focused on identifying and assessing plausible ligands that inhibit the e-cadherin binding site to disrupt the Wnt/ß-catenin pathway, a prominent cancer proliferation signaling process.</p>
+                <ul>
+                  <li>Utilized molecular dynamics simulation to locate active binding sites on β-catenin protein structure</li>
+                  <li>Performed fragment docking to assess chemical affinities at active binding site and assembled pharmacophores with functional groups and geometries</li>
+                  <li>Using pharmacophores as screening references, evaluated binding affinity of potential inhibitors in molecular simulation</li>
+                </ul>
+                <p><b>Results</b>: Located three pharmacophore candidates with >0.7 binding affinity and reasonable chemical properties that enable the ligands to competitively inhibit the e-cadherin binding site.</p>
               </div>
             </div>
           </div>
