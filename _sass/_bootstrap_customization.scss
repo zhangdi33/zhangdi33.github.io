@@ -306,6 +306,13 @@ th {
   }
 }
 
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+
 .popover {
   --bs-popover-border-color: transparent;
   box-shadow: var(--bs-box-shadow);
