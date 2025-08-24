@@ -116,7 +116,7 @@ layout: default
         <div class="accordion" id="projects">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingAEV">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AEV" aria-expanded="true" aria-controls="AEV">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AEV" aria-expanded="false" aria-controls="AEV">
                 Describing the Atomic Environment
               </button>
             </h2>
@@ -127,21 +127,21 @@ layout: default
                   <br><i class="small">University of Michigan, Department of Chemistry, Department of Biophysics</i>
                 </p>
                 <p class="text-info">Nov 2022-Jun 2024</p>
-                <p>Atomic environment vectors are descriptors that quantify chemical environments of a molecule at the scale of an atom. There are many ways to approach this, including the focus of this project - atom-centered symmetry functions (ACSFs), proposed by Behler and Perrinello and implemented by TorchANI. We are interested in learning how this descriptor captures and arranges information in latent space, and whether it has the capability to categorize unique atomic environments.</p>
+                <p>Atomic environment vectors (AEVs) are descriptors that quantify chemical environments of a molecule at the scale of an atom. There are many ways to approach this, including the focus of <b>my Master's student research</b> project - AEVs based on <b>atom-centered symmetry functions (ACSFs)</b>, as proposed by Behler and Perrinello and implemented by TorchANI. These AEVs are invariant to rotation, translation, and permutation of atoms. We are interested in learning how this type of AEV encodes information in latent space, and whether it has the capability to categorize unique atomic environments.</p>
                 <ul>
                   <li>Compiled dataset by extracting and parsing molecules used in CGenFF validation set</li>
                   <li>Performed agglomerative, KMeans and DBSCAN clustering on AEVs</li>
                   <li>Analyzed cluster membership and evaluated AEVs as predictors for chemical identity as annotated by CGenFF atom typing</li>
                 </ul>
+                <p><b>Results:</b> ACSF-based AEVs are informative and demonstrated consistent atom type assignments with human chemists' manual annotations for CHARMM.</p>
 
                 <p class="text-info">Jun 2024-Jun 2025</p>
-                <p>As a <b>post-Master's practical training student</b>, I continued my work in investigating atomic environment descriptors.</p>
+                <p>As a <b>post-Master's practical training student</b>, I continued my work in investigating atomic environment descriptors. My next objective was to inform and improve molecular simulation accuracy using insights from ACSF-based AEVs.</p>
                 <ul>
                   <li>Set up a machine learning workflow for training and optimizing atomic environment vectors (AEV) generation parameters for accurate atom type labels</li>
                   <li>Visualized AEVs in machine learning latent space via PCA and t-SNE</li>
                   <li>Investigated the impact of differentially weighted radial and angular sub-vectors</li>
                 </ul>
-                <p><b>Results:</b> ACSF-based AEVs are informative and demonstrated consistent atom type assignments with human chemists' manual annotations for CHARMM.</p>
               </div>
             </div>
           </div>
